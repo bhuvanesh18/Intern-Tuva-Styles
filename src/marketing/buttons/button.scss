@@ -1,0 +1,100 @@
+.btn-mkt {
+  display: inline-block;
+  padding: 20px 24px;
+  font-size: $h6-size;
+  font-weight: $font-weight-medium;
+  color: $text-white;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  line-height: 1em;
+  // stylelint-disable-next-line primer/colors
+  background-color: $blue-400;
+  // stylelint-disable-next-line primer/borders
+  border: $border-width $border-style $blue-400;
+  border-radius: $border-radius + 2;
+  transition: $transition-time / 2;
+  appearance: none; // Corrects inability to style clickable `input` types in iOS.
+
+  &:hover {
+    text-decoration: none;
+    background-color: $bg-blue;
+    border-color: $border-blue;
+  }
+
+  &:focus {
+    outline: 0;
+    // stylelint-disable-next-line primer/box-shadow
+    box-shadow: 0 0 0 0.2em rgba($blue-500, 0.3);
+  }
+
+  &:disabled,
+  &.disabled,
+  &[aria-disabled="true"] {
+    pointer-events: none; // Disable hover styles
+    cursor: default;
+    opacity: 0.65;
+  }
+}
+
+.btn-primary-mkt {
+  color: $black;
+  // stylelint-disable-next-line primer/colors
+  background-color: $yellow-500;
+  // stylelint-disable-next-line primer/borders
+  border-color: $yellow-600;
+
+  &:hover {
+    background-color: $yellow-500;
+    // stylelint-disable-next-line primer/borders
+    border-color: $yellow-600;
+  }
+
+  &:focus {
+    // stylelint-disable-next-line primer/box-shadow
+    box-shadow: 0 0 0 0.2em rgba($yellow-500, 0.3);
+  }
+}
+
+.btn-outline-mkt {
+  // stylelint-disable-next-line primer/colors
+  color: $blue-400;
+  // stylelint-disable-next-line primer/colors
+  background-color: rgba($white, 0);
+  // stylelint-disable-next-line primer/borders
+  border-color: rgba($blue-400, 0.5);
+
+  &:hover {
+    color: $text-blue;
+    text-decoration: none;
+    // stylelint-disable-next-line primer/colors
+    background-color: rgba($white, 0);
+    // stylelint-disable-next-line primer/borders
+    border-color: rgba($blue-400, 1);
+  }
+}
+
+.btn-large-mkt {
+  // stylelint-disable-next-line primer/spacing
+  padding: 20px 40px;
+  font-size: $h5-size;
+  font-weight: $font-weight-bold;
+}
+
+.btn-wide-mkt {
+  padding: 20px 70px;
+  font-size: $h5-size;
+  font-weight: $font-weight-bold;
+}
+
+.btn-small-mkt {
+  padding: 15px 20px;
+  font-size: $h6-size - 2;
+}
+
+.btn-tiny-mkt {
+  padding: 12px 15px;
+  font-size: $h6-size - 4;
+  font-weight: $font-weight-semibold;
+}

@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./../../../index.css" />
+  </head>
+  <body>
+    <div>
+      <details class="details-reset details-overlay ml-2 mt-2" open>
+        <summary class="btn" aria-haspopup="true">
+          Choose an item
+        </summary>
+        <div class="SelectMenu">
+          <div class="SelectMenu-modal">
+            <header class="SelectMenu-header">
+              <h3 class="SelectMenu-title">Title</h3>
+              <button class="SelectMenu-closeButton" type="button">
+                <!-- <%= octicon "x" %> -->
+                <svg
+                  width="12"
+                  height="16"
+                  viewBox="0 0 12 16"
+                  class="octicon octicon-x"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"
+                  />
+                </svg>
+              </button>
+            </header>
+            <div class="SelectMenu-list">
+              <button class="SelectMenu-item" role="menuitem">Item 1</button>
+              <button class="SelectMenu-item" role="menuitem">Item 2</button>
+              <button class="SelectMenu-item" role="menuitem">Item 3</button>
+              <button class="SelectMenu-item" role="menuitem">Item 4</button>
+              <button class="SelectMenu-item" role="menuitem">Item 5</button>
+            </div>
+            <footer class="SelectMenu-footer">Footer</footer>
+          </div>
+        </div>
+      </details>
+    </div>
+  </body>
+</html>

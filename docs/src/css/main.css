@@ -1,0 +1,158 @@
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+.tuva-container {
+  position: flex;
+  display: block;
+  margin-top: 100px;
+  margin-left: 340px;
+  margin-right: 80px;
+  height: auto;
+}
+.tuva-line {
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (max-width: 650px) {
+  .tuva-container {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+  }
+}
+.custom-anim {
+  animation-name: custom-fade-in;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes custom-fade-in {
+  0% {
+    opacity: 0.5;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+#sidenav {
+  position: fixed;
+  display: inline-block;
+  width: 250px;
+  padding: 20px;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  top: 20px;
+  left: 0;
+  z-index: 100;
+}
+.divider {
+  margin-top: 8px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 200px;
+  height: auto;
+  border-top: 1px solid #000;
+}
+.divider h3 {
+  font-size: 20px;
+}
+
+.divider ul {
+  list-style-type: none;
+  font-weight: 600;
+}
+.divider li {
+  padding-top: 8px;
+  margin-top: 8px;
+}
+.divider ul a {
+  text-decoration: none;
+  color: #26aebc;
+}
+.active {
+  color: #fcc714 !important;
+  font-weight: 800;
+}
+.active li {
+  border-right: 3px solid #fcc714;
+}
+.divider li:hover,
+.divider li:active {
+  color: #fcc714;
+  border-right: 3px solid #fcc714;
+  cursor: pointer;
+}
+#checkbox_id {
+  float: right;
+  display: none;
+}
+.nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 101;
+}
+#tuva-menu {
+  display: block;
+  position: fixed;
+  top: 24px;
+  left: auto;
+  right: 24px;
+  float: right;
+  z-index: 101;
+}
+@media only screen and (min-width: 650px) {
+  #searchInputBox {
+    width: 250px !important;
+  }
+  #searchResults {
+    left: 260px !important;
+    top: 80px !important;
+  }
+  .nav {
+    height: 80px !important;
+  }
+  #sidenav {
+    top: 0;
+  }
+}
+#search_close_btn {
+  cursor: pointer;
+}
+#searchResults {
+  top: 100px;
+  left: 20px;
+  width: 350px;
+  max-height: 400px;
+  overflow: auto;
+  z-index: 102;
+}
+
+.custom-search-result:hover {
+  background-color: #26aebc;
+}
+
+#searchInputBox {
+  width: 180px;
+}
+
+#menu_value {
+  transform: rotate(90deg);
+}

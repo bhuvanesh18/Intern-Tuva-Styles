@@ -1,0 +1,34 @@
+// Subhead styles
+.Subhead {
+  display: flex;
+  padding-bottom: $spacer-2;
+  margin-bottom: $spacer-3;
+  border-bottom: $border;
+  flex-flow: row wrap;
+}
+
+.Subhead--spacious {
+  margin-top: $spacer-6;
+}
+
+.Subhead-heading {
+  font-size: $h2-size;
+  font-weight: $font-weight-normal;
+  flex: 1 1 auto;
+}
+
+.Subhead-heading--danger {
+  font-weight: $font-weight-bold;
+  color: $text-red;
+}
+
+.Subhead-description {
+  font-size: $body-font-size;
+  color: $text-gray;
+  flex: 1 100%;
+}
+
+.Subhead-actions {
+  align-self: center;
+  justify-content: flex-end;
+}

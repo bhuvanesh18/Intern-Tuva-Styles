@@ -1,0 +1,232 @@
+.s0 {
+  font-size: 12px !important;
+}
+.s1 {
+  font-size: 16px !important;
+}
+.s2 {
+  font-size: 14px !important;
+}
+.p1 {
+  font-size: 18px !important;
+}
+.p2 {
+  font-size: 16px !important;
+}
+.s0,
+.s1,
+.s2,
+.p1,
+.p2 {
+  letter-spacing: auto !important;
+}
+.ls-default {
+  letter-spacing: auto !important;
+}
+.ls-condensed {
+  letter-spacing: -1.2px !important;
+}
+.ls-condensed-ultra {
+  letter-spacing: -1.4px !important;
+}
+
+.h1 {
+  font-size: $h1-size-mobile !important;
+
+  @include breakpoint(md) {
+    font-size: $h1-size !important;
+  }
+}
+
+/* Set the font size to 22px */
+.h2 {
+  font-size: $h2-size-mobile !important;
+
+  @include breakpoint(md) {
+    font-size: $h2-size !important;
+  }
+}
+
+/* Set the font size to 18px */
+.h3 {
+  font-size: $h3-size-mobile !important;
+
+  @include breakpoint(md) {
+    font-size: $h3-size !important;
+  }
+}
+
+/* Set the font size to #{$h4-size} */
+.h4 {
+  font-size: $h4-size !important;
+}
+
+/* Set the font size to #{$h5-size} */
+.h5 {
+  font-size: $h5-size !important;
+}
+
+// Does not include color property like typography base
+// styles, color should be applied with color utilities.
+/* Set the font size to #{$h6-size} */
+.h6 {
+  font-size: $h6-size !important;
+}
+
+// Heading utilities
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: $font-weight-bold !important;
+}
+.font-weight-black {
+  font-weight: $font-weight-black !important;
+}
+.font-weight-bold {
+  font-weight: $font-weight-bold !important;
+}
+.font-weight-semibold {
+  font-weight: $font-weight-semibold !important;
+}
+.font-weight-medium {
+  font-weight: $font-weight-medium !important;
+}
+.font-weight-normal {
+  font-weight: $font-weight-normal !important;
+}
+.font-weight-light {
+  font-weight: $font-weight-light !important;
+}
+
+// Smallest text size
+/* Set the font size to ${#h6-size} */
+.text-small {
+  font-size: $h6-size !important;
+} // 12px
+
+/* Large leading paragraphs */
+.lead {
+  margin-bottom: 30px;
+  font-size: $h3-size;
+  font-weight: $font-weight-light;
+  color: $gray-600;
+}
+
+// Line-height variations
+// Close to commonly used line-heights. Most line-heights
+// combined with type size equate to whole pixels.
+// Will be improved with future typography scale updates.
+/* Set the line height to ultra condensed */
+.lh-condensed-ultra {
+  line-height: $lh-condensed-ultra !important;
+}
+/* Set the line height to condensed */
+.lh-condensed {
+  line-height: $lh-condensed !important;
+}
+/* Set the line height to default */
+.lh-default {
+  line-height: $lh-default !important;
+}
+/* Set the line height to zero */
+.lh-0 {
+  line-height: 0 !important;
+}
+
+// Text alignments
+// Responsive text alignment
+@each $breakpoint, $variant in $responsive-variants {
+  @include breakpoint($breakpoint) {
+    /* Text align to the right */
+    .text#{$variant}-right {
+      text-align: right !important;
+    }
+    /* Text align to the left */
+    .text#{$variant}-left {
+      text-align: left !important;
+    }
+    /* Text align to the center */
+    .text#{$variant}-center {
+      text-align: center !important;
+    }
+  }
+}
+
+// Text styles
+/* Set the font weight to normal */
+.text-normal {
+  font-weight: $font-weight-normal !important;
+}
+/* Set the font weight to bold */
+.text-bold {
+  font-weight: $font-weight-bold !important;
+}
+/* Set the font to italic */
+.text-italic {
+  font-style: italic !important;
+}
+/* Make text uppercase */
+.text-uppercase {
+  text-transform: uppercase !important;
+}
+/* Underline text */
+.text-underline {
+  text-decoration: underline !important;
+}
+/* Don't underline text */
+.no-underline {
+  text-decoration: none !important;
+}
+/* Don't wrap white space */
+.no-wrap {
+  white-space: nowrap !important;
+}
+/* Normal white space */
+.ws-normal {
+  white-space: normal !important;
+}
+
+/* Force long "words" to wrap if they exceed the width of the container */
+.break-word {
+  word-break: break-word !important;
+  // this is for backwards compatibility with browsers that don't respect overflow-wrap
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.wb-break-all {
+  word-break: break-all !important;
+}
+
+.text-emphasized {
+  font-weight: $font-weight-bold;
+  color: $text-gray-dark;
+}
+
+// List styles
+.list-style-none {
+  list-style: none !important;
+}
+
+// Text Shadows
+/* Add a dark text shadow */
+.text-shadow-dark {
+  text-shadow: 0 1px 1px rgba($black, 0.25), 0 1px 25px rgba($black, 0.75);
+}
+/* Add a light text shadow */
+.text-shadow-light {
+  text-shadow: 0 1px 0 rgba($white, 0.5);
+}
+
+/* Set to monospace font */
+.text-mono {
+  font-family: $mono-font !important;
+}
+
+/* Disallow user from selecting text */
+.user-select-none {
+  user-select: none !important;
+}

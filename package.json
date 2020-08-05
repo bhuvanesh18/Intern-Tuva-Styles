@@ -1,0 +1,14 @@
+{
+  "name": "tuva-styles",
+  "version": "0.0.1",
+  "description": "Tuva Styles",
+  "private": true,
+  "main": "src/index.scss",
+  "scripts": {
+    "sass": "node-sass src/index.scss docs/public/index.css"
+  },
+  "author": "",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
